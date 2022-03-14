@@ -1,8 +1,15 @@
 # terraform-aws-oidc-with-github-actions
 
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/thetestlabs/terraform-aws-oidc-with-github-actions?display_name=tag&sort=semver)
+![Terraform workflow](https://github.com/thetestlabs/terraform-aws-oidc-with-github-actions/actions/workflows/terraform.yml/badge.svg) 
+
+## AWS Federation With Github Actions
+
 A Terraform module to configure OIDC between GitHub Actions and AWS.
 
 The module configures Federation with your AWS account using Github Actions as an Open ID Connect (OIDC) identity provider. This allows you to assume an IAM role within your account with short-lived credentials, removing the need for secrets management.
+
+[![SWUbanner](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md)
 
 ## Usage
 

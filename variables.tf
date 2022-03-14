@@ -7,7 +7,7 @@ variable "enabled" {
 variable "oidc_url" {
   description = "The URL of the identity provider. Corresponds to the iss claim."
   type        = string
-  default     = "token.actions.githubusercontent.com"
+  default     = "https://token.actions.githubusercontent.com"
 }
 
 variable "client_id_list" {

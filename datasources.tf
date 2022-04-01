@@ -15,7 +15,7 @@ data "aws_iam_policy_document" "assume_role" {
 
     principals {
       type        = "Federated"
-      identifiers = ["arn:aws:iam::${data.aws_caller_identity.current.account_id}:oidc-provider/token.actions.githubusercontent.com"]
+      identifiers = [aws_iam_openid_connect_provider.github[0].arn]
     }
 
     condition {

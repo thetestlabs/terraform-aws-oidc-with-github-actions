@@ -22,5 +22,5 @@ resource "aws_iam_role_policy_attachment" "policy" {
   count = var.enabled ? 1 : 0
 
   role       = aws_iam_role.github[count.index].id
-  policy_arn = "arn:aws:iam::aws:policy/${var.iam_role_policy}"
+  policy_arn = data.aws_iam_policy.attach_policy.arn
 }
